@@ -17,7 +17,7 @@ menu:
 avatar: /img/avatar.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /favicon.png
+favicon: /img/avatar.png
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -85,7 +85,7 @@ preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: false
+show_count: true
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
@@ -128,7 +128,7 @@ color_scheme: yilia
 
 highlight_style:
   on: true
-  inline_code: 1  # Value: 0 - 9 可选
+  inline_code: 1  # Value: 0 - 9 可选,亲测1-9的变化不大
   code_block: 1  # Value: 0 - 4 
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
@@ -180,10 +180,10 @@ limit_article_width:
 tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
-friends:
-  Hexo: https://hexo.io
-  GitHub: https://pages.github.com/
-  MOxFIVE: http://moxfive.xyz/
+# friends:
+#   Hexo: https://hexo.io
+#   GitHub: https://pages.github.com/
+#   MOxFIVE: http://moxfive.xyz/
 # friends: true
 
 #是否开启“关于我”。
@@ -268,7 +268,7 @@ baidu_tongji:
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
-  on: false
+  on: true
   site_visit: true
   page_visit: true
 
