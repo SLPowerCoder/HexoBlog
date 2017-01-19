@@ -68,9 +68,11 @@ duoshuo_shortname: fengye1030   # 这里添加多说评论
 
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+# Plugins: https://hexo.io/plugins/
+# Themes: https://hexo.io/themes/
 theme: yelee  #默认是landscape 还有yelee,yilia等等
+# theme: yilia  
+# theme: huxblog  
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

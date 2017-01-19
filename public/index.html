@@ -189,7 +189,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-native/">react-native</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-redux/">react-redux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redux/">redux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a></li></ul>
                     </div>
                 </section>
                 
@@ -258,6 +258,163 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-运行react native 官方例子出错" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/01/07/运行react native 官方例子出错/" class="article-date">
+      <time datetime="2017-01-07T12:07:16.000Z" itemprop="datePublished">2017-01-07</time>
+</a>
+
+ 
+    <a href="/2017/01/07/运行react native 官方例子出错/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2017/01/07/运行react native 官方例子出错/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/07/运行react native 官方例子出错/">运行react native 官方例子出错的解决办法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>学习一样新的东西官网文档和官方源码例子无疑是最好的选择，所以今天clone了官方的例子，100多兆，如果网速不好的话会等待很长时间 ~_~!!，然后直接cd到根目录执行了npm install安装了依赖，可是安装的过程中出错了（也有可能安装成功了，但是运行失败了），估计例子上的版本跟我安装的rn版本不兼容吧。</p>
+<blockquote>
+<p>我目前的RN版本是0.39，命令行的版本是react-native-cli:2.0.1</p>
+</blockquote>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/react-native/">react-native</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react-native</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2017/01/07/运行react native 官方例子出错/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-react-redux入门" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/12/30/react-redux入门/" class="article-date">
+      <time datetime="2016-12-30T08:44:42.000Z" itemprop="datePublished">2016-12-30</time>
+</a>
+
+ 
+    <a href="/2016/12/30/react-redux入门/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/12/30/react-redux入门/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/30/react-redux入门/">react-redux入门</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h2 id="redux基础"><a href="#redux基础" class="headerlink" title="redux基础"></a>redux基础</h2><h3 id="action"><a href="#action" class="headerlink" title="action"></a>action</h3><p><strong>Action</strong> ：一般我们是不允许用户直接操作类的state，而是通过触发消息来执行对应的操作，用户或后台服务器通过store.dispatch()来向store发送一个消息（消息至少一个标识该消息的字段type，还可以添加其他字段用户数据传送），store会在内部根据消息的类型type去reducer中执行相应的处理，这个消息我们就叫他为Action，Action本质上是一个JavaScript对象。<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/react-native/">react-native</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-native/">react-native</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-redux/">react-redux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/redux/">redux</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/12/30/react-redux入门/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-iOS你可能不知道的小技巧" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -286,7 +443,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/02/iOS你可能不知道的小技巧/">Mac上 Hexo安装与配置</a>
+      <a class="article-title" href="/2016/09/02/iOS你可能不知道的小技巧/">iOS你可能不知道的小技巧</a>
     </h1>
   
 
@@ -423,7 +580,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016 枫叶
+                2016-2017 枫叶
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>

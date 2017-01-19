@@ -167,7 +167,7 @@ deploy:
 
 ### hexo的使用
 
-**1.创建文章**
+**1.创建文章（也可以把创建好的md文件直接放到根目录source/_posts目录中）**
 
 ``` bash
 $ hexo new "My New Post"
