@@ -15,16 +15,19 @@
 
 
 
-<meta name="description" content="坐看云起时">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://slpowercoder.github.io/tags/index.html">
+<meta name="description" content="想必大家都知道在分类中能扩展属性，而对于能不能扩展属性，能不能扩展成员变量是不是有点模糊，今天元宵节，我就清清嗓子说上两句吧
+论点1.分类中是能扩展属性的2.分类是不能给一个类扩展成员变量的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS中为什么非要用runtime才能在分类中扩展属性呢">
+<meta property="og:url" content="https://slpowercoder.github.io/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/index.html">
 <meta property="og:site_name" content="枫叶">
-<meta property="og:description" content="坐看云起时">
-<meta property="og:updated_time" content="2016-09-02T03:50:27.000Z">
+<meta property="og:description" content="想必大家都知道在分类中能扩展属性，而对于能不能扩展属性，能不能扩展成员变量是不是有点模糊，今天元宵节，我就清清嗓子说上两句吧
+论点1.分类中是能扩展属性的2.分类是不能给一个类扩展成员变量的">
+<meta property="og:updated_time" content="2017-02-11T15:38:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="坐看云起时">
+<meta name="twitter:title" content="iOS中为什么非要用runtime才能在分类中扩展属性呢">
+<meta name="twitter:description" content="想必大家都知道在分类中能扩展属性，而对于能不能扩展属性，能不能扩展成员变量是不是有点模糊，今天元宵节，我就清清嗓子说上两句吧
+论点1.分类中是能扩展属性的2.分类是不能给一个类扩展成员变量的">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +59,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>tags | 枫叶</title>
+<title>iOS中为什么非要用runtime才能在分类中扩展属性呢 | 枫叶</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -66,7 +69,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -252,11 +255,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-iOS中为什么非要用runtime才能在分类中扩展属性呢" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tags/index.html" class="article-date">
-      <time datetime="2016-09-02T03:50:27.000Z" itemprop="datePublished">2016-09-02</time>
+      <a href="/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/" class="article-date">
+      <time datetime="2017-02-11T15:36:36.000Z" itemprop="datePublished">2017-02-11</time>
 </a>
 
 
@@ -271,7 +274,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      tags
+      iOS中为什么非要用runtime才能在分类中扩展属性呢
     </h1>
   
 
@@ -279,8 +282,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/category/">category</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/runtime/">runtime</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -288,96 +299,90 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+        <p>想必大家都知道在分类中能扩展属性，而对于能不能扩展属性，能不能扩展成员变量是不是有点模糊，今天元宵节，我就清清嗓子说上两句吧</p>
+<h5 id="论点"><a href="#论点" class="headerlink" title="论点"></a>论点</h5><p>1.分类中是能扩展属性的<br>2.分类是不能给一个类扩展成员变量的<br><a id="more"></a></p>
+<h5 id="先唠唠嗑"><a href="#先唠唠嗑" class="headerlink" title="先唠唠嗑"></a>先唠唠嗑</h5><p>强调一下，分类不是类，它只是对类的一个扩展，没有ISA指针，我们知道我们可以通过runtime在不影响原来模块的情况下给模块扩展方法，有没有感觉这一句话好像也可以描述分类，<em>所以你可以认为分类是实现这一功能的捷径</em>，不然你觉得是用分类扩展方法容易还是用runtime来实现容易啊（正值年轻，说话有点冲~_~ !!）。</p>
+<h5 id="论据"><a href="#论据" class="headerlink" title="论据"></a>论据</h5><p>先说说属性，属性是对成员变量的一个封装，当我们声明一个属性的时候，Xcode会给我们默认创建一个 <strong>_属性名</strong> 的成员变量，也会给我们自动创建getter和setter方法。当然我们也可以用@synthesize指定其关联的变量<br>例如给属性name指定其关联的变量<figure class="highlight plain"><figcaption><span>name = xxx；```self.name其实是操作的实例变量xxx，而不是_name了。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">窝草，扯远了，回归正传。。</div><div class="line">所以我们要添加一个属相得有三样东西，setter、getter以及关联的成员变量。</div><div class="line">在分类中Xcode不会为我们自动创建setter、getter方法，我们可以手动实现，但是如何把一个变量关联到属性上呢，直接声明一个全局变量然后不行吗，事实证明不太行，对于getter方法还好说，直接返回一个变量就行，可是setter方法却不行，因为你要找到该属性关联的变量你才能给人家赋值啊，怎么办？怎么办？？这只能用runtime的对象关联来实现了</div></pre></td></tr></table></figure></p>
+<p>.m文件中<br>// 定义关联的key<br>static const char *key = “name”;</p>
+<p>@implementation NSObject (Property)</p>
+<ul>
+<li><p>(NSString *)name<br>{<br>// 根据关联的key，获取关联的值。<br>return objc_getAssociatedObject(self, key);<br>}</p>
+</li>
+<li><p>(void)setName:(NSString *)name<br>{<br>// 参数一：目标对象<br>// 参数二：关联的key，可以通过这个key获取<br>// 参数三：关联的value<br>// 参数四：关联的策略<br>objc_setAssociatedObject(self, key, name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);<br>}<br>@end</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">看到这里你也许就会说，这TMD不是把变量给添加上去了吗？我表示默默一笑，如果你打印IVarList你就会发现并没有这个变量，只能打印出添加的属性。</div><div class="line">其实**对象关联**只是关联上去了，并没有把变量添加进去，说了这么多这回你该信了吧。</div><div class="line">***原因就是分类不是类，他没有ISA指针，下面是ISA指针，可以看出他本质上是一个结构体（只是换了个马甲被称之为Class类型，怕你迷糊，再说明白一点，ISA指针就是Class类型），通过ISA指针才能找指向变量的ivars，也就是说你都不知道变量的家，你怎么去给它生猴子啊，但是奇怪了，ISA指针里没有指向属性数组的指针，没有是对的，要不然这一段的解释就废了，可是讲真，属性指针在哪啊？？？有知道的小伙伴请告诉我一下 &gt;_&lt; !!!***</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>struct objc_class {<br>    Class isa  OBJC_ISA_AVAILABILITY;</p>
+<p>#if !<strong>OBJC2</strong><br>    Class super_class                                        OBJC2_UNAVAILABLE;<br>    const char <em>name                                         OBJC2_UNAVAILABLE;<br>    long version                                             OBJC2_UNAVAILABLE;<br>    long info                                                OBJC2_UNAVAILABLE;<br>    long instance_size                                       OBJC2_UNAVAILABLE;<br>    struct objc_ivar_list </em>ivars                             OBJC2_UNAVAILABLE;<br>    struct objc_method_list <em>*methodLists                    OBJC2_UNAVAILABLE;<br>    struct objc_cache </em>cache                                 OBJC2_UNAVAILABLE;<br>    struct objc_protocol_list *protocols                     OBJC2_UNAVAILABLE;</p>
+<p>#endif</p>
+<p>} OBJC2_UNAVAILABLE;<br>/<em> Use <code>Class</code> instead of `struct objc_class </em>` */<br>```</p>
+<h5 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h5><p>分类中可以给一个对象（类也是对象）添加属性，但是不能添加成员变量，只能<strong>关联</strong>上去。<br><strong>注意：</strong>如果不信，你可以自己再打印一遍吧，会发现只能打印出添加的属性，打印不出变量。</p>
 
-
-    <!-- Tag Cloud Page -->
-    <hr>
-<br>
-<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/react-native/">react-native</a><span class="category-list-count">2</span></li></ul>
-
-<p class="count"></p>
-
-<div class="tags">
-    <a href="/tags/assign/" style="font-size: 16px; color: #808080">assign</a> <a href="/tags/category/" style="font-size: 16px; color: #808080">category</a> <a href="/tags/hexo/" style="font-size: 16px; color: #808080">hexo</a> <a href="/tags/iOS/" style="font-size: 16px; color: #808080">iOS</a> <a href="/tags/react-native/" style="font-size: 35px; color: #000">react-native</a> <a href="/tags/react-redux/" style="font-size: 16px; color: #808080">react-redux</a> <a href="/tags/redux/" style="font-size: 16px; color: #808080">redux</a> <a href="/tags/retain/" style="font-size: 16px; color: #808080">retain</a> <a href="/tags/runtime/" style="font-size: 16px; color: #808080">runtime</a> <a href="/tags/strong/" style="font-size: 16px; color: #808080">strong</a> <a href="/tags/weak/" style="font-size: 16px; color: #808080">weak</a> <a href="/tags/博客/" style="font-size: 16px; color: #808080">博客</a> <a href="/tags/浅拷贝/" style="font-size: 16px; color: #808080">浅拷贝</a> <a href="/tags/深拷贝/" style="font-size: 16px; color: #808080">深拷贝</a>
-</div>
-<style>
-    .category-list li{
-        display: inline-block;
-        margin: 0 1em .5em 0;
-        padding: 4px;
-        border: 1px solid lightgray;
-        font-size: 1.2rem;
-    }
-    .category-list a { color: gray; }
-    .category-list-item:hover a {
-        color: gray;
-        text-decoration: none;
-    }
-    .category-list-count {
-        margin-left: 2px;
-        font-size: .9rem;
-    }
-    .article-entry ul li:before{ display: none; }
-    .article-inner { text-align: center; }
-    .tags {
-        max-width: 42em;
-        margin: 2em auto;
-        margin-top: 0em;
-    }
-    .tags a {
-        margin-right: 1em;
-        line-height: 65px;
-        border-bottom: 1px solid gray;
-        white-space: nowrap;
-        transition: border-bottom .5s;
-    }
-    .tags a:hover {
-        border-bottom: 3px dotted gray;
-        text-decoration: none;
-    }
-    #count > span {
-        margin: auto .2em;
-        font-weight: bold;
-    }
-</style>
-
-<!-- Count tags and categories -->
-<p id="count">
-        已有<span><script>document.write($(".category-list-item").length)</script></span>个分类，
-        共计<span><script>document.write($(".tags > a").length)</script></span>个标签
-</p>
-<script>
-    $('#count').appendTo('.count');
-</script>
-
-          
-        
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/">iOS中为什么非要用runtime才能在分类中扩展属性呢</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">枫叶</a></p>
+        <p><span>发布时间:</span>2017-02-11, 23:36:36</p>
+        <p><span>最后更新:</span>2017-02-11, 23:38:38</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/" title="iOS中为什么非要用runtime才能在分类中扩展属性呢">https://slpowercoder.github.io/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://slpowercoder.github.io/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/　　作者: 枫叶" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/02/11/iOS中assign与weak，retain与strong的区别/">
+                    iOS中assign与weak，retain与strong的区别
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/01/07/运行react native 官方例子出错/">
+                    运行react native 官方例子出错的解决办法
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#论点"><span class="toc-number">1.</span> <span class="toc-text">论点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#先唠唠嗑"><span class="toc-number">2.</span> <span class="toc-text">先唠唠嗑</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#论据"><span class="toc-number">3.</span> <span class="toc-text">论据</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#结论"><span class="toc-number">4.</span> <span class="toc-text">结论</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -395,7 +400,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"tags　| 枫叶　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"iOS中为什么非要用runtime才能在分类中扩展属性呢　| 枫叶　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -411,7 +416,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="tags/index.html" data-title="tags" data-url="https://slpowercoder.github.io/tags/index.html"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/" data-title="iOS中为什么非要用runtime才能在分类中扩展属性呢" data-url="https://slpowercoder.github.io/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/"></div>
     <script>
         var duoshuoQuery = {short_name:"null"};
         var loadComment = function(){
@@ -429,6 +434,26 @@
 </div>
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/02/11/iOS中assign与weak，retain与strong的区别/" title="上一篇: iOS中assign与weak，retain与strong的区别">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/01/07/运行react native 官方例子出错/" title="下一篇: 运行react native 官方例子出错的解决办法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/11/iOS 深拷贝和浅拷贝/">iOS 深拷贝和浅拷贝</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/11/iOS中assign与weak，retain与strong的区别/">iOS中assign与weak，retain与strong的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/11/iOS中为什么非要用runtime才能在分类中扩展属性呢/">iOS中为什么非要用runtime才能在分类中扩展属性呢</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/07/运行react native 官方例子出错/">运行react native 官方例子出错的解决办法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/30/react-redux入门/">react-redux入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/02/iOS你可能不知道的小技巧/">iOS你可能不知道的小技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/02/hexo的安装和配置/">Mac上 Hexo安装与配置</a></li></ul>
 
 
 
