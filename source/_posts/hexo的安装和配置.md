@@ -8,7 +8,6 @@ tags: [hexo,博客]
 ### 安装
 #### 1. 安装node.js[传送](https://nodejs.org/en/)
 下载node的pkg包，点击直接安装，安装的过程下一步下一步就行了，新版的node.js包含有npm（npm用来安装hexo）
-<!-----More----->
 #### 2. 安装hexo
 ``` bash
 $ sudo npm install -g hexo-cli
@@ -165,14 +164,14 @@ deploy:
 
 ```
 
-### hexo的使用
+### hexo的使用（下面的命令如果报错，请用sudo权限执行）
 
 **1.创建文章（也可以把创建好的md文件直接放到根目录source/_posts目录中）**
 
 ``` bash
 $ hexo new "My New Post"
 ```
-<!-----More------>
+
 **2.清楚缓存的静态页面**
 
 ``` bash
