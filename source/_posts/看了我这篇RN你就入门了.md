@@ -282,8 +282,7 @@ const {dispatch, BrandReducer} = this.props;
 
 ## react native 组件的生命周期
 ### 弄明白了这个图我认为你就能基本掌握RN了
-![redux flow](http://7xqg0d.com1.z0.glb.clouddn.com/hexoBlog/react-native%E5%A3%B0%E6%98%8E%E5%91%A8%E6%9C%9F.PNG
-)
+![react-native lifecircle](https://github.com/SLPowerCoder/SLPowerCoder.github.io/blob/master/uploads/react-native%E5%A3%B0%E6%98%8E%E5%91%A8%E6%9C%9F.PNG?raw=true)
 注意：上图的最右边componentWillMount改成componentWillUnmount
 ### 项目的推荐目录
 这种结构适合业务逻辑不太复杂的中小型项目，其优点是逻辑模块清晰，缺点是文件目录跨度较大，对于大型项目建议按项目的功能模块来划分。

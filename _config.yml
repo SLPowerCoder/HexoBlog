@@ -7,14 +7,13 @@ title: 枫叶
 subtitle: 枫叶
 description: 坐看云起时
 author: 枫叶
-language: zh-Hans 
+language: zh-Hans
 timezone:
-email: sunlei_1030@126.com  # 邮箱
-
+email: sunlei_1030@126.com # 邮箱
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://slpowercoder.github.io
+url: https://sunleic.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -30,7 +29,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts  文件名称： https://hexo.io/zh-cn/docs/writing.html    :year-:month-:day-:title.md 
+new_post_name: :title.md # File name of new posts  文件名称： https://hexo.io/zh-cn/docs/writing.html    :year-:month-:day-:title.md
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -40,10 +39,10 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
+    enable: true
+    line_number: true
+    auto_detect: false
+    tab_replace:
 
 # Category & Tag
 default_category: uncategorized
@@ -63,21 +62,21 @@ per_page: 10
 pagination_dir: page
 
 # Disqus  disqus评论,  与多说类似, 国内一般使用多说
-# disqus_shortname: 
-duoshuo_shortname: fengye1030   # 这里添加多说评论
-
+# disqus_shortname:
+duoshuo_shortname: fengye1030 # 这里添加多说评论
 
 # Extensions
 # Plugins: https://hexo.io/plugins/
 # Themes: https://hexo.io/themes/
-# theme: yelee  #默认是landscape 还有yelee,yilia等等
-# theme: yilia  
-# theme: huxblog  
-theme: next  
+theme: next
+# theme: pacman
+# theme: BlueLake
+# theme: landscape
+# theme: hexo-theme-snippet
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git    #部署类型, 本文使用Git，发现使用github+SSH的方式会提示找不到github
-  repository: https://github.com/SLPowerCoder/SLPowerCoder.github.io  #部署的仓库url,采用https的,发现使用github+SSH的方式会提示找不到github
-  branch: master   #部署分支,一般使用master主分支
+    type: git #部署类型, 本文使用Git，发现使用github+SSH的方式会提示找不到github
+    repository: https://github.com/sunleic/sunleic.github.io #部署的仓库url,采用https的,发现使用github+SSH的方式会提示找不到github
+    branch: master #部署分支,一般使用master主分支
